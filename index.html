@@ -3,15 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Critter Meadow</title>
+  <title>Critter Meadow: gentle learning games for kids aged 3 to 8, no ads</title>
+  <meta name="description" content="Critter Meadow is a growing world of gentle learning games for toddlers and kids aged 3 to 8: counting, shapes, patterns, memory and more. No ads, no accounts, works offline. Free on Google Play.">
+  <link rel="canonical" href="https://pirokicki.github.io/world-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Critter Meadow: gentle learning games for kids aged 3 to 8">
+  <meta property="og:description" content="18 games in a little world that grows. No ads, no accounts, works offline. Free on Google Play.">
+  <meta property="og:image" content="https://pirokicki.github.io/world-site/img/trail.jpg">
+  <meta property="og:url" content="https://pirokicki.github.io/world-site/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/icon.png">
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 16px; color: #2b3a55; background: #f4fbff; line-height: 1.5; }
+    /* No web fonts, scripts, cookies or trackers: the page loads nothing from anywhere else. */
+    :root { --ink: #2b3a55; --sky: #7ec8f0; --sky-light: #e8f6fd; --accent: #ff7a59; --green: #4cbb6c; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Nunito", "Trebuchet MS", system-ui, sans-serif; color: var(--ink); background: var(--sky-light); line-height: 1.55; }
     a { color: #1e6091; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+    header { background: linear-gradient(#5fb8ea, #bfe6fa); padding: 40px 0 56px; text-align: center; }
+    header img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 8px 20px rgba(43, 58, 85, 0.25); }
+    h1 { font-size: clamp(34px, 6vw, 56px); margin: 16px 0 4px; color: #fff; text-shadow: 0 3px 0 rgba(43, 58, 85, 0.3); }
+    .tagline { font-size: clamp(18px, 2.6vw, 24px); margin: 0 auto 24px; max-width: 680px; font-weight: 700; }
+    .play { display: inline-block; background: var(--ink); color: #fff; text-decoration: none; font-weight: 800; font-size: 20px; padding: 16px 30px; border-radius: 14px; box-shadow: 0 6px 0 #1b2638; }
+    .play:hover { transform: translateY(1px); box-shadow: 0 5px 0 #1b2638; }
+    .play small { display: block; font-size: 13px; font-weight: 600; opacity: 0.8; }
+    .try { display: block; margin-top: 16px; font-weight: 700; }
+    .hero { display: block; width: 100%; max-width: 960px; margin: 32px auto 0; border: 8px solid #fff; border-radius: 24px; box-shadow: 0 14px 34px rgba(43, 58, 85, 0.3); }
+    .promise { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: -26px auto 0; position: relative; }
+    .promise span { background: #fff; border-radius: 999px; padding: 10px 20px; font-weight: 800; box-shadow: 0 4px 12px rgba(43, 58, 85, 0.15); }
+    section { padding: 48px 0 8px; }
+    h2 { font-size: 30px; margin: 0 0 18px; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; }
+    .card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(43, 58, 85, 0.12); }
+    .card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .card div { padding: 14px 18px 18px; }
+    .card h3 { margin: 0 0 4px; font-size: 20px; }
+    .card p { margin: 0; }
+    ul.skills { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px 22px; }
+    ul.skills li { background: #fff; border-radius: 14px; padding: 12px 16px; box-shadow: 0 3px 10px rgba(43, 58, 85, 0.08); }
+    ul.skills b { display: block; }
+    .grownups { background: #fff; border-radius: 24px; padding: 26px 28px; box-shadow: 0 6px 18px rgba(43, 58, 85, 0.12); }
+    .grownups ul { margin: 0; padding-left: 22px; }
+    .cta { text-align: center; padding: 48px 0 24px; }
+    footer { text-align: center; padding: 24px 0 40px; font-size: 15px; }
   </style>
 </head>
 <body>
-  <h1>Critter Meadow</h1>
-  <p>A growing collection of simple, joyful games for kids aged about 3 to 8, for Android.</p>
-  <p><a href="privacy.html">Privacy policy</a> · <a href="main/">Play the latest build in your browser</a></p>
+  <header>
+    <div class="wrap">
+      <img class="icon" src="img/icon.png" alt="Critter Meadow app icon: a smiling purple monster on a green hill">
+      <h1>Critter Meadow</h1>
+      <p class="tagline">A growing world of gentle learning games for toddlers and kids aged 3 to 8.</p>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.pirokicki.crittermeadow">Get it on Google Play<small>Free for Android phones and tablets</small></a>
+      <a class="try" href="main/">or try it in your browser</a>
+      <img class="hero" src="img/trail.jpg" width="960" height="540" alt="The trail through the Meadow: little houses for each game, with stars under them, a panda buddy in a party hat and a veggie garden">
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="promise"><span>No ads</span><span>No accounts</span><span>No data collected</span><span>Works offline</span><span>16 languages</span></div>
+
+    <section>
+      <h2>Little games, big skills</h2>
+      <div class="grid">
+        <div class="card"><img src="img/rock-pool.jpg" width="960" height="540" loading="lazy" alt="Rock Pool Count: an octopus holds up a card with a 2 while sea critters swim in the pool"><div><h3>Count with sea critters</h3><p>Tap as many critters as the octopus's card shows, then ring the shell bell.</p></div></div>
+        <div class="card"><img src="img/marmot-picnic.jpg" width="960" height="540" loading="lazy" alt="Marmot Picnic: three marmots wait at a picnic table for strawberries from the basket"><div><h3>Share fairly</h3><p>Share berries and cookies so every marmot gets the same, then cut pies into halves and quarters.</p></div></div>
+        <div class="card"><img src="img/turtle-trek.jpg" width="960" height="540" loading="lazy" alt="Turtle Trek: arrow buttons plan a baby turtle's path across the sand to the sea"><div><h3>Plan a path</h3><p>Lay arrow shells to guide the baby turtle to the sea: a first step into coding.</p></div></div>
+        <div class="card"><img src="img/shell-necklace.jpg" width="960" height="540" loading="lazy" alt="Shell Necklace: a penguin waits while a string of pink and blue shells has one gap to fill"><div><h3>Spot the pattern</h3><p>Finish the pattern of shells on the string, then watch a critter wear its new necklace.</p></div></div>
+        <div class="card"><img src="img/tide-pool.jpg" width="960" height="540" loading="lazy" alt="The Tide Pool: a seal, crab, turtle, octopus and otter splash about with the panda buddy"><div><h3>Critters move in</h3><p>Critters from the games come to live in each land's play corners and play with your buddy.</p></div></div>
+        <div class="card"><img src="img/paint-boats.jpg" width="960" height="540" loading="lazy" alt="Paint the Boats: an otter shows a picture of a boat to paint, with paint pots on the jetty"><div><h3>Paint and create</h3><p>Paint the otter's boat to match its picture, or paint boats any way you like.</p></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What children practise</h2>
+      <ul class="skills">
+        <li><b>Counting and numbers</b>Rock Pool Count, Star Dots</li>
+        <li><b>Shapes, sizes and sorting</b>Sandcastle Builder, Snowman Stack, Tidy Up, Feed the Monster</li>
+        <li><b>Patterns and symmetry</b>Shell Necklace, Snowflake Mirror</li>
+        <li><b>Memory and attention</b>Animal Pairs, Mitten Match, Hide and Seek</li>
+        <li><b>Planning ahead and first coding steps</b>Turtle Trek, Bundle Up</li>
+        <li><b>Sharing fairly, halves and quarters</b>Marmot Picnic</li>
+        <li><b>Fine motor skills</b>Penguin Slide, Bubble Pop</li>
+        <li><b>Colours, music and creativity</b>Paint the Boats, Jelly Band</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>For grown-ups</h2>
+      <div class="grownups">
+        <ul>
+          <li>No ads, and no accounts, chat or personal data. Read the <a href="privacy.html">privacy policy</a>.</li>
+          <li>Works offline. Progress is saved on the device only.</li>
+          <li>Settings sit behind a grown-up check, so little fingers stay in the games.</li>
+          <li>No reading needed, no timers and no "game over". Every round ends with stars and a happy critter.</li>
+          <li>Easy first levels for toddlers, harder levels and fresh random rounds for older kids.</li>
+          <li>Made by an independent developer. More games are on the way.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.pirokicki.crittermeadow">Get it on Google Play<small>Free for Android phones and tablets</small></a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:piotr.rokicki@prokicki.com">piotr.rokicki@prokicki.com</a><br>
+    Google Play is a trademark of Google LLC.
+  </footer>
 </body>
 </html>
